@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <header class = "header">
       <div class="container">
         <nav class="nav">
@@ -30,17 +31,22 @@
       </div>  
     </header>
 
-    <main class = "main">
+    <main class = "main-container">
 
-        <section class="section" id="profile">
-            <img id="photo" src="assets/img/my photo.jpg" alt="my photo">
-            <h1>Roman Trubin</h1>
+        <div class="section" id="myphoto">
+
+<img id="photo" src="assets/img/myphoto.jpg" alt="myphoto">
+</div>
+       
+<section class="section" id="profile">
+            
+            <h1>ROMAN TRUBIN</h1>
             <p>JUNIOR FRONT-END DEVELOPER</p>
         </section> 
 
         <section class="section" id="contacts">
             <h2>Contacts</h2>
-            <p class="contacts">
+            <div class="contacts">
                 <ul class="contacts"> 
                     <li>Location: Russia, Samara</li>
                     <li>Phone: +7-927-657-99-34</li>
@@ -49,7 +55,7 @@
                     <li>Discord: roman2308</li>
                     <li>GitHub: RomanTrubin</li>
                 </ul>
-            </p>
+            </div>
 
         </section>
 
@@ -61,14 +67,14 @@
         </section>
         <section class="section" id="skills">
             <h2>Skills</h2>
-            <p class="skills">
+            <div class="skills">
                 <ul class="skills">
                     <li>HTML/HTML5</li>
                     <li>CSS/CSS3</li>
                     <li>Git/GitHub</li>
                     <li>VSCode</li>
                 </ul>
-            </p>
+            </div>
 
 
         </section>
@@ -76,8 +82,8 @@
             <h2>Code</h2>
             <pre><code>
     function factorial(n) {
-    if(n < 0) return null;
-    if (n <= 1) return 1;
+    if(n &lt; 0) return null;
+    if (n &lt;= 1) return 1;
     return n * factorial(n-1);
   }
              </code></pre>
@@ -96,12 +102,12 @@
         </section>
         <section class="section" id="education">
             <h2>Education</h2>
-            <p class="education">
+            <div class="education">
                 <ul class="education">
                     <li>University: Povolzhskiy State University of Telecommunications and Informatics</li>
                     <li>Specialization: infocommunication technologies and communication systems</li>
                 </ul>
-            </p>
+            </div>
 
         </section>
 
@@ -116,9 +122,18 @@
     </main>
 
     <footer class = "footer">
-        <div class="container"></div> 
+        <div class = "footer">
+            <h2>© 2023</h2>
+            <h2>
+                <a href="https://github.com/RomanTrubin">RomanTrubin</a>
+            </h2>
+        </div>
+        
+        <a href="https://rs.school/js/">
+            <img id="rss" src="assets/img/logo.png" alt="RS School">
+        </a>
     </footer>
-    
+</div>   
 </body>
 
 </html>
