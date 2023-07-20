@@ -97,10 +97,15 @@ box-sizing: inherit;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 20px;
     background-color: #0C0C0E;
     color: white;
+  }
+
+  .header_wrap {
+    display: flex;
+    flex-wrap: wrap;
   }
 
     .header_list {
@@ -120,7 +125,7 @@ box-sizing: inherit;
       font-family:'Forum';
       font-size: 30px;
       line-height: 50px; /* 166.667% */
-      letter-spacing: 0.02em;
+      /* letter-spacing: 0.02em; */
       text-align: left;
     }
 
@@ -129,13 +134,121 @@ box-sizing: inherit;
       color: white;
     }
 
-    .header_link:hover, .header_link:focus, .header_link:active {
+    .header_link:hover, .header_link:active {
       opacity: 55%;
     }
-.icon_profile{
-  width: 20px;
-  height: 20px;
-}
+
+   
+
 
 /* Header style end */
 
+  
+
+/* Main Welcome image style start */
+
+.welcom_image {
+  position: relative;
+  background: url(../img/Welcome.jpg); 
+  width: 1440px;
+  height: 600px;
+ 
+}
+
+.welcome_text {
+  position: absolute;
+  top: 220px;
+  font-family:'Forum';
+  color: white;
+  font-size: 40px;
+  background-color: black;
+  width: 600px;
+  padding: 35px 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  /* letter-spacing: 0.1px; */
+
+}
+
+/* Main Welcome image style end */
+
+/* Main Aboute style start */
+
+h2 {
+  color: #0C0C0E;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h2::after {
+  content: "";
+  display:block;
+  width: 50px;
+  padding-top: 20px;
+  border-bottom: 2px solid #0C0C0E;
+  margin: 0 auto;
+}
+
+.about_text { 
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+padding-top: 40px;
+letter-spacing: 1.4px
+}
+
+.about_images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.about_images_ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_images_element {
+  padding-left: 25px;
+}
+
+.about_circle {
+  padding: 40px 686px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about_circle1 {
+  width: 16px;
+  height: 16px;
+  background-color: #BB945F;
+  border-radius: 50%;
+}
+
+.about_circle2 {
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.about_circle3 {
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 50%;
+}
