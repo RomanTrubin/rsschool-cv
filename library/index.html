@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&;900&display=swap" rel="stylesheet">
     <title>Brooklyn Public Library</title>
 </head>
 
@@ -20,10 +24,10 @@
     <nav class="header_nav">
         <ul class="header_list">
             <li class="header_item">            
-                <a href="#!" class="header_link">About</a>
+                <a href="#about" class="header_link">About</a>
             </li>
             <li class="header_item">            
-                <a href="#!" class="header_link">Favorites</a>
+                <a href="#favorites" class="header_link">Favorites</a>
             </li>
             <li class="header_item">            
                 <a href="#!" class="header_link">Coffee shop</a>
@@ -48,13 +52,13 @@
    <main>
     
     <section class="welcom_image">
-    <div class="welcome_text">Welcome <br />to the Brooklyn <br />Library</div>
+    <div class="welcome_text">Welcome <br />to the Brooklyn<br />Library</div>
     </section>
     
 
 
     <section class="about_section">
-        <h2 class="about_h2">About</h2>
+        <h2 class="about_h2" id="about">About</h2>
         <div class="about_text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</div>
         <div class="about_images">
             <ul class="about_images_ul">
@@ -64,9 +68,85 @@
             </ul>
         </div>
         <div class="about_circle">
-            <div class="about_circle1"></div>
-            <div class="about_circle2"></div>
-            <div class="about_circle3"></div>
+            <div class="aboute_circle_div"><a href="#!" class="about_circle1"></a></div>
+            <div class="aboute_circle_div"><a href="#!" class="about_circle2"></a></div>
+            <div class="aboute_circle_div"><a href="#!" class="about_circle3"></a></div>
+        </div>
+    </section>
+
+
+
+    <section class="favorites">
+        <h2 class="favorites_h2" id="favorites">Favorites</h2>
+        <p class="favorites_pick">Pick favorites of season</p>
+        <form class="favorites_form">
+            <fieldset class="favorites_form_wrap">
+                <p class="favorites_form_info">
+                    <span class="season_imput_favorites"><input class="imput_favorites" type="radio"><span class="seasons_imput" id="Winter">Winter</span></span>
+                    <span class="season_imput_favorites"><input class="imput_favorites" type="radio"><span class="seasons_imput" id="Spring">Spring</span></span>
+                    <span class="season_imput_favorites"><input class="imput_favorites" type="radio"><span class="seasons_imput" id="Summer">Summer</span></span>
+                    <span class="season_imput_favorites"><input class="imput_favorites" type="radio"><span class="seasons_imput" id="Autumn">Autumn</span></span>
+                </p>
+            </fieldset>
+        </form>
+
+        <div class="wrap_book_winter">
+            
+            <div class="book_winter">
+                <div class="staff_picks">Staff Picks</div>
+                <div class="book_favorites">
+                    <p class="namebook">The Book Eaters</p>
+                    <p class="author">By Sunyi Dean</p>
+                </div>
+                <div class="about_book">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</div>
+            <form class="favorites_form_button" id="favorites_button1">
+                <button class="button_Buy">Buy</button>
+            </form>
+            <img class="book_picture" src="img/one book.jpg" alt="The Book Eaters">
+            </div>    
+        
+
+            <div class="book_winter">
+                <div class="staff_picks">Staff Picks</div>
+                <div class="book_favorites">
+                    <p class="namebook">Cackle</p>
+                    <p class="author">By Rachel Harrison</p>
+                </div>
+                <div class="about_book">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</div>
+            <form class="favorites_form_button" id="favorites_button2">
+                <button class="button_Buy">Buy</button>
+            </form>
+            <img class="book_picture" src="img/second book.jpg" alt="Cackle">
+            </div> 
+
+
+            <div class="book_winter">
+                <div class="staff_picks">Staff Picks</div>
+                <div class="book_favorites">
+                    <p class="namebook">Dante: Poet of the Secular World</p>
+                    <p class="author">By Erich Auerbach</p>
+                </div>
+                <div class="about_book">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</div>
+            <form class="favorites_form_button" id="favorites_button3">
+                <button class="button_Buy">Buy</button>
+            </form>
+            <img class="book_picture" src="img/third book.jpg" alt="Dante: Poet of the Secular World">
+            </div> 
+
+
+            <div class="book_winter">
+                <div class="staff_picks">Staff Picks</div>
+                <div class="book_favorites">
+                    <p class="namebook">The Last Queen</p>
+                    <p class="author">By Clive Irving</p>
+                </div>
+                <div class="about_book">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</div>
+            <form class="favorites_form_button" id="favorites_button4">
+                <button class="button_Buy" id="Own">Own</button>
+            </form>
+            <img class="book_picture" src="img/fourth book.jpg" alt="The Last Queen">
+            </div> 
+
         </div>
     </section>
     

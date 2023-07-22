@@ -47,38 +47,12 @@ table {
 	border-spacing: 0;
 }
 
-
-/* forum-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Forum';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/forum-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
-  /* inter-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* inter-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/inter-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
   html{
     box-sizing: border-box;
   }
   *, *::before, *::after{
 box-sizing: inherit;
+scroll-behavior: smooth;
   }
   
 
@@ -105,6 +79,7 @@ box-sizing: inherit;
 
   .header_wrap {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -114,6 +89,12 @@ box-sizing: inherit;
     }
 
     .header_item {
+      color: #FFF;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 50px; /* 250% */
       margin-right: 30px;
     }
 
@@ -122,10 +103,13 @@ box-sizing: inherit;
     }
 
     h1 {
-      font-family:'Forum';
+      color: #FFF;
+      font-family: Forum;
       font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
       line-height: 50px; /* 166.667% */
-      /* letter-spacing: 0.02em; */
+      letter-spacing: 0.6px;
       text-align: left;
     }
 
@@ -136,6 +120,7 @@ box-sizing: inherit;
 
     .header_link:hover, .header_link:active {
       opacity: 55%;
+      cursor: pointer;
     }
 
    
@@ -158,18 +143,19 @@ box-sizing: inherit;
 .welcome_text {
   position: absolute;
   top: 220px;
-  font-family:'Forum';
-  color: white;
-  font-size: 40px;
   background-color: black;
   width: 600px;
   padding: 35px 40px;
-  text-transform: uppercase;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px; /* 125% */
-  /* letter-spacing: 0.1px; */
+  color: #FFF;
+text-align: center;
+justify-content: center;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 125% */
+letter-spacing: 3px;
+text-transform: uppercase;
 
 }
 
@@ -208,7 +194,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 40px; /* 200% */
 padding-top: 40px;
-letter-spacing: 1.4px
 }
 
 .about_images {
@@ -220,23 +205,40 @@ letter-spacing: 1.4px
 .about_images_ul {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 20px;
 }
 
-.about_images_element {
-  padding-left: 25px;
+.about_images_element:not(:last-child) {
+  padding-right: 25px;
 }
+
 
 .about_circle {
-  padding: 40px 686px;
+
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 34px;
+
+}
+.aboute_circle_div {
+ 
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 .about_circle1 {
   width: 16px;
   height: 16px;
   background-color: #BB945F;
   border-radius: 50%;
+  
+
 }
 
 .about_circle2 {
@@ -244,6 +246,9 @@ letter-spacing: 1.4px
   height: 16px;
   background-color: #000;
   border-radius: 50%;
+ 
+
+  
 }
 
 .about_circle3 {
@@ -251,4 +256,196 @@ letter-spacing: 1.4px
   height: 16px;
   background-color: #000;
   border-radius: 50%;
+
+}
+
+/* Main Aboute style end */
+
+
+
+/* Main Favorites style start */
+
+.favorites_pick {
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 40px;
+padding-left: 20px;
+}
+
+.favorites_form {
+  padding-top: 40px;
+  padding-left: 10px;
+  /* max-width: 50%; */
+}
+
+.favorites_form_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start
+}
+
+.season_imput_favorites {
+  padding-right: 90px;
+}
+
+.seasons_imput {
+  padding-left: 15px;
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#Winter {
+  font-weight: 700;
+}
+
+.imput_favorites {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: #000; 
+}
+
+input[type='radio'] {
+  accent-color: #000000;
+  cursor: pointer;}
+
+.wrap_book_winter {
+  padding: 40px 60px 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_winter {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.staff_picks {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.staff_picks::after {
+  content: "";
+  display:block;
+  width: 60px;
+  padding-top: 0px;
+  border-bottom: 1px solid #BB945F;
+}
+
+.book_favorites {
+  padding-top: 20px;
+}
+
+.namebook {
+color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 266.667% */
+letter-spacing: 2px;
+text-transform: uppercase
+}
+
+.author {
+color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.about_book {
+padding-top: 20px;
+width: 355px;
+color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 266.667% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+#favorites_button1 {
+  padding-top: 15px;
+}
+
+#favorites_button2 {
+  padding-top: 55px;
+}
+
+#favorites_button3 {
+  padding-top: 15px;
+}
+
+#favorites_button4 {
+  padding-top: 95px;
+}
+
+
+
+.button_Buy {
+width: 75px;
+height: 30px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+color: #0C0C0E;
+background-color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+cursor: pointer;
+}
+
+#Own {
+  color: #BB945F;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+border: 1px solid #BB945F;
+}
+
+.book_picture {
+  position: absolute;
+    bottom: -1px;
+    right: -45px;
+
 }
