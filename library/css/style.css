@@ -120,6 +120,7 @@ scroll-behavior: smooth;
 
     .header_link:hover, .header_link:active {
       opacity: 55%;
+      transition: opacity 0.5s ease;
       cursor: pointer;
     }
 
@@ -302,6 +303,10 @@ font-weight: 400;
 line-height: normal;
 }
 
+.seasons_imput:hover {
+  cursor: pointer;
+}
+
 #Winter {
   font-weight: 700;
 }
@@ -319,7 +324,7 @@ input[type='radio'] {
   cursor: pointer;}
 
 .wrap_book_winter {
-  padding: 40px 60px 40px 20px;
+  padding: 40px 60px 0px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -395,24 +400,6 @@ letter-spacing: 2px;
 text-transform: capitalize;
 }
 
-#favorites_button1 {
-  padding-top: 15px;
-}
-
-#favorites_button2 {
-  padding-top: 55px;
-}
-
-#favorites_button3 {
-  padding-top: 15px;
-}
-
-#favorites_button4 {
-  padding-top: 95px;
-}
-
-
-
 .button_Buy {
 width: 75px;
 height: 30px;
@@ -429,6 +416,15 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1px;
 cursor: pointer;
+transition: background-color 0.5s ease;
+position: absolute;
+left: 20px;
+bottom: 15px;
+}
+
+.button_Buy:hover {
+  background-color: #BB945F;
+  border: none;
 }
 
 #Own {
@@ -443,9 +439,102 @@ letter-spacing: 1px;
 border: 1px solid #BB945F;
 }
 
+#Own:hover {
+  background-color: #FFF;
+  border: 1px solid #BB945F;
+  cursor: default;
+}
+
 .book_picture {
   position: absolute;
     bottom: -1px;
     right: -45px;
+}
 
+/* Main Favorites style end */
+
+
+
+
+/* Main Favorites seasons style start */
+
+
+.wrap_book_spring {
+  padding: 40px 60px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_spring {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.wrap_book_summer {
+  padding: 40px 60px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_summer {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.wrap_book_autumn {
+  padding: 40px 60px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_autumn {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.wrap_book_seasons {
+  display: none;
+}
+
+/* Main Favorites seasons style end */
+
+
+
+/* Main Coffee shop style start */
+.aboute_coffee_shop {
+  padding-top: 40px;
+  margin-left: 20px;
+  width: 1400px;
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
 }
