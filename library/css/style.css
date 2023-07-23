@@ -656,3 +656,81 @@ letter-spacing: 2px;
 text-transform: capitalize;
 }
 
+/* Main Coffee shop style end */
+
+/* Main Our Contacts style start */
+
+.wrap_contacts {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts_info {
+  /* height: 20px;
+  display: flex;
+  align-items: center; */
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.h3_contacts_item_1 {
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.contacts_info_item_1 {
+  padding-top: 40px;
+}
+
+.contacts_info_item_2 {
+  padding-top: 20px;
+}
+.contacts_info_item_3 {
+  padding-top: 20px;
+}
+
+.h3_contacts_item_2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-top: 40px;
+  }
+
+  .contacts_info_item_4 {
+    padding-top: 20px;
+  }
+
+  .href_contacts {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #amanda {
+    color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 2px;
+text-transform: capitalize;
+  }
