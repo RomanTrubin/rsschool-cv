@@ -538,3 +538,121 @@ font-weight: 400;
 line-height: 40px; /* 200% */
 letter-spacing: 2px;
 }
+
+.coffee_shop_h3 {
+color: #BB945F;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+height: 40px;
+}
+
+.wrap_coffee_shop {
+  display: flex;
+  width: 1440px;
+  padding: 40px 20px 40px 20px;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coffee_and_tea{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+} 
+
+ .coffee_and_tea_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 60px;
+}
+
+.coffee_and_tea_price_item {
+color: #000;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.coffee_and_tea_menu_line_item {
+  align-items: center;
+  display: flex;
+}
+
+.coffee_and_tea_menu_position {
+  width: 196px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+
+
+}
+
+.desserts_and_cakes {
+  display: flex;
+width: 482px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+}
+
+.desserts_and_cakes_menu_position {
+height: 40px;
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+display: flex;
+align-items: center;
+}
+
+
+
+.desserts_and_cakes_menu {
+  display: flex;
+justify-content: flex-end;
+align-items: center;
+padding-top: 40px;
+gap: 60px;
+}
+
+.desserts_and_cakes_menu_line_item {
+  align-items: center;
+  display: flex;
+}
+
+.desserts_and_cakes_price_item {
+  color: #000;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
