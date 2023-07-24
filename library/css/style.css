@@ -658,19 +658,22 @@ text-transform: capitalize;
 
 /* Main Coffee shop style end */
 
+
+
+
 /* Main Our Contacts style start */
 
 .wrap_contacts {
-  padding: 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .contacts_info {
-  /* height: 20px;
-  display: flex;
-  align-items: center; */
   color: #000;
   font-family: Inter;
   font-size: 20px;
@@ -734,3 +737,167 @@ line-height: 40px;
 letter-spacing: 2px;
 text-transform: capitalize;
   }
+  /* Main Our Contacts style end */
+
+.wrap_digital_library_cards {
+  padding: 40px 20px 41px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.find_library_card {
+  justify-content: center;
+}
+
+.find_your_library_card {
+width: 600px;
+color: #000;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+justify-content: center;
+text-align: center;
+
+
+}
+
+.input_find_your_library_card {
+  margin-top: 30px;
+  width: 600px;
+  height: 386px;
+  flex-shrink: 0;
+  border: 3px solid #BB945F;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.input_find_your_library_card_gold_bg {
+  margin: 18px;
+  width: 560px;
+  height: 272px;
+  flex-shrink: 0;
+  background: #BB945F;
+}
+
+.name_input_find_your_library_card {
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+}
+
+.imput_find {
+  padding-top: 20px;
+  padding-left: 19px;
+}
+
+.input_find_your_library_card_item {
+width: 523px;
+height: 69px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #FFF;
+color: #8E8E8E;
+font-family: Forum;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 166.667% */
+letter-spacing: 0.6px;
+padding-left: 20px;
+outline: none;
+}
+
+.find_your_library_card_button_item {
+display: inline-flex;
+padding: 10px 40px;
+align-items: flex-end;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+background-color: #FFF;
+margin-left: 177px;
+margin-top: 2px;
+}
+
+.find_your_library_card_button_item:hover {
+  background-color: #BB945F;
+  border: none;
+  cursor: pointer;
+}
+
+.get_a_reader_card {
+  color: #000;
+text-align:end;
+font-family: Forum;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+margin-top: 2px;
+}
+
+.get_a_reader_card_info {
+  width: 456px;
+  color: #000;
+text-align: right;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 0.4px;
+padding-top: 35px;
+}
+.get_a_reader_card_button {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.get_a_reader_card_button_item {
+display: flex;
+width: 75px;
+height: 30px;
+padding: 10px 0px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+background-color: #FFF;
+margin-left: 20px;
+}
+
+.get_a_reader_card_button_item:hover {
+  background-color: #BB945F;
+  border: none;
+  cursor: pointer;
+}
