@@ -1,0 +1,1085 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+  html{
+    box-sizing: border-box;
+  }
+  *, *::before, *::after{
+box-sizing: inherit;
+scroll-behavior: smooth;
+  }
+  
+
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+  }
+
+  /* Hader style start */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px;
+    background-color: #0C0C0E;
+    color: white;
+  }
+
+  .header_wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+    .header_list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .header_item {
+      color: #FFF;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 50px; /* 250% */
+      margin-right: 30px;
+    }
+
+    .header_icon {
+      margin-left: 10px;
+    }
+
+    h1 {
+      color: #FFF;
+      font-family: Forum;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 50px; /* 166.667% */
+      letter-spacing: 0.6px;
+      text-align: left;
+    }
+
+    .header_link {
+      text-decoration: none;
+      color: white;
+    }
+
+    .header_link:hover, .header_link:active {
+      opacity: 55%;
+      transition: opacity 0.5s ease;
+      cursor: pointer;
+    }
+
+   
+
+
+/* Header style end */
+
+  
+
+/* Main Welcome image style start */
+
+.welcom_image {
+  position: relative;
+  background: url(../img/Welcome.jpg); 
+  width: 1440px;
+  height: 600px;
+ 
+}
+
+.welcome_text {
+  position: absolute;
+  top: 220px;
+  background-color: black;
+  width: 600px;
+  padding: 35px 40px;
+  color: #FFF;
+text-align: center;
+justify-content: center;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 125% */
+letter-spacing: 3px;
+text-transform: uppercase;
+
+}
+
+/* Main Welcome image style end */
+
+/* Main Aboute style start */
+
+h2 {
+  color: #0C0C0E;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h2::after {
+  content: "";
+  display:block;
+  width: 50px;
+  padding-top: 20px;
+  border-bottom: 2px solid #0C0C0E;
+  margin: 0 auto;
+}
+
+.about_text { 
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+padding-top: 40px;
+}
+
+.about_images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.about_images_ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.about_images_element:not(:last-child) {
+  padding-right: 25px;
+}
+
+
+.about_circle {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 34px;
+
+}
+.aboute_circle_div {
+ 
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.about_circle1 {
+  width: 16px;
+  height: 16px;
+  background-color: #BB945F;
+  border-radius: 50%;
+  
+
+}
+
+.about_circle2 {
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 50%;
+ 
+
+  
+}
+
+.about_circle3 {
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 50%;
+
+}
+
+/* Main Aboute style end */
+
+
+
+/* Main Favorites style start */
+
+.favorites_pick {
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 40px;
+padding-left: 20px;
+}
+
+.favorites_form {
+  padding-top: 40px;
+  padding-left: 10px;
+  /* max-width: 50%; */
+}
+
+.favorites_form_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start
+}
+
+.season_imput_favorites {
+  padding-right: 90px;
+}
+
+.seasons_imput {
+  padding-left: 15px;
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.seasons_imput:hover {
+  cursor: pointer;
+}
+
+#Winter {
+  font-weight: 700;
+}
+
+.imput_favorites {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: #000; 
+}
+
+input[type='radio'] {
+  accent-color: #000000;
+  cursor: pointer;}
+
+.wrap_book_winter {
+  padding: 40px 60px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_winter {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.staff_picks {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.staff_picks::after {
+  content: "";
+  display:block;
+  width: 60px;
+  padding-top: 0px;
+  border-bottom: 1px solid #BB945F;
+}
+
+.book_favorites {
+  padding-top: 20px;
+}
+
+.namebook {
+color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 266.667% */
+letter-spacing: 2px;
+text-transform: uppercase
+}
+
+.author {
+color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.about_book {
+padding-top: 20px;
+width: 355px;
+color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 266.667% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.button_Buy {
+width: 75px;
+height: 30px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+color: #0C0C0E;
+background-color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+position: absolute;
+left: 20px;
+bottom: 15px;
+}
+
+.button_Buy:hover {
+  background-color: #BB945F;
+  border: none;
+}
+
+#Own {
+  color: #BB945F;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+border: 1px solid #BB945F;
+}
+
+#Own:hover {
+  background-color: #FFF;
+  border: 1px solid #BB945F;
+  cursor: default;
+}
+
+#Own1 {
+  color: #BB945F;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+border: 1px solid #BB945F;
+}
+
+#Own1:hover {
+  background-color: #FFF;
+  border: 1px solid #BB945F;
+  cursor: default;
+}
+
+.book_picture {
+  position: absolute;
+    bottom: -1px;
+    right: -45px;
+}
+
+/* Main Favorites style end */
+
+
+
+
+/* Main Favorites seasons style start */
+
+
+.wrap_book_spring {
+  padding: 40px 60px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_spring {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.wrap_book_summer {
+  padding: 40px 60px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_summer {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.wrap_book_autumn {
+  padding: 40px 60px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book_autumn {
+position: relative;
+width: 550px;
+height: 555px;
+flex-shrink: 0;
+border: 1px solid #000;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+margin-bottom: 40px;
+}
+
+.wrap_book_seasons {
+  display: none;
+}
+
+/* Main Favorites seasons style end */
+
+
+
+/* Main Coffee shop style start */
+.aboute_coffee_shop {
+  padding-top: 40px;
+  margin-left: 20px;
+  width: 1400px;
+  color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+}
+
+.coffee_shop_h3 {
+color: #BB945F;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+height: 40px;
+}
+
+.wrap_coffee_shop {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440px;
+  padding: 40px 20px 40px 20px;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coffee_and_tea{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+} 
+
+ .coffee_and_tea_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 60px;
+}
+
+.coffee_and_tea_price_item {
+color: #000;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.coffee_and_tea_menu_line_item {
+  align-items: center;
+  display: flex;
+}
+
+.coffee_and_tea_menu_position {
+  width: 196px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+
+
+}
+
+.desserts_and_cakes {
+  display: flex;
+width: 482px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+}
+
+.desserts_and_cakes_menu_position {
+height: 40px;
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+display: flex;
+align-items: center;
+}
+
+
+
+.desserts_and_cakes_menu {
+  display: flex;
+justify-content: flex-end;
+align-items: center;
+padding-top: 40px;
+gap: 60px;
+}
+
+.desserts_and_cakes_menu_line_item {
+  align-items: center;
+  display: flex;
+}
+
+.desserts_and_cakes_price_item {
+  color: #000;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+/* Main Coffee shop style end */
+
+
+
+
+/* Main Our Contacts style start */
+
+.wrap_contacts {
+  padding-top: 40px;
+  padding-bottom: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts_info {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.h3_contacts_item_1 {
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+.contacts_info_item_1 {
+  padding-top: 40px;
+}
+
+.contacts_info_item_2 {
+  padding-top: 20px;
+}
+.contacts_info_item_3 {
+  padding-top: 20px;
+}
+
+.h3_contacts_item_2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding-top: 40px;
+  }
+
+  .contacts_info_item_4 {
+    padding-top: 20px;
+  }
+
+  .href_contacts {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #amanda {
+    color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 2px;
+text-transform: capitalize;
+  }
+  /* Main Our Contacts style end */
+
+
+
+
+  
+  /* Main Digital Library Cards style start */
+
+.wrap_digital_library_cards {
+  padding: 40px 20px 41px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.find_library_card {
+  justify-content: center;
+}
+
+.find_your_library_card {
+width: 600px;
+color: #000;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+justify-content: center;
+text-align: center;
+
+
+}
+
+.input_find_your_library_card {
+  margin-top: 30px;
+  width: 600px;
+  height: 386px;
+  flex-shrink: 0;
+  border: 3px solid #BB945F;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.input_find_your_library_card_gold_bg {
+  margin: 18px;
+  width: 560px;
+  height: 272px;
+  flex-shrink: 0;
+  background: #BB945F;
+}
+
+.name_input_find_your_library_card {
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+}
+
+.imput_find {
+  padding-top: 20px;
+  padding-left: 19px;
+}
+
+.input_find_your_library_card_item {
+width: 523px;
+height: 69px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #FFF;
+color: #8E8E8E;
+font-family: Forum;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 166.667% */
+letter-spacing: 0.6px;
+padding-left: 20px;
+outline: none;
+}
+
+.find_your_library_card_button_item {
+display: inline-flex;
+padding: 10px 40px;
+align-items: flex-end;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+background-color: #FFF;
+margin-left: 177px;
+margin-top: 2px;
+}
+
+.find_your_library_card_button_item:hover {
+  background-color: #BB945F;
+  border: none;
+  cursor: pointer;
+}
+
+.get_a_reader_card {
+  color: #000;
+text-align:end;
+font-family: Forum;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+margin-top: 2px;
+}
+
+.get_a_reader_card_info {
+  width: 456px;
+  color: #000;
+text-align: right;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 0.4px;
+padding-top: 35px;
+}
+.get_a_reader_card_button {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.get_a_reader_card_button_item {
+display: flex;
+width: 75px;
+height: 30px;
+padding: 10px 0px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+background-color: #FFF;
+margin-left: 20px;
+}
+
+.get_a_reader_card_button_item:hover {
+  background-color: #BB945F;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main Digital Library Cards style end */
+
+
+
+
+/* Footer style start */
+
+.footer_adr {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.footer_adr_map {
+width: 229px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+}
+
+.adr_map {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+
+}
+
+.footer_operating_mode_mon-fri {
+color: #FFF;
+text-align: right;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+}
+
+.footer_social_network {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+
+.footer_social_network_ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 102px;
+height: 24px;
+justify-content: center;
+align-items: flex-start;
+gap: 15px;
+margin-top: 8px;
+}
+
+.footer_operating_mode_sat-sun {
+color: #FFF;
+text-align: right;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+}
+
+.line_footer_wrap
+{background-color: #000;}
+
+.line_footer {
+margin-left: 20px;
+height: 1px;
+width: 1400px;
+background-color: #FFF;
+}
+
+.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+
+.year {
+  color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 2px;
+}
+
+.school {
+padding-left: 494px;
+  display: flex;
+height: 22px;
+flex-direction: column;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 2px;
+}
+
+.name_school {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+}
+
+
+
+
+
+.my_github {
+  padding-left: 393px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+height: 22px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+
+}
+
+
