@@ -553,6 +553,7 @@ height: 40px;
 
 .wrap_coffee_shop {
   display: flex;
+  flex-wrap: wrap;
   width: 1440px;
   padding: 40px 20px 40px 20px;
   /* flex-direction: column; */
@@ -739,6 +740,12 @@ text-transform: capitalize;
   }
   /* Main Our Contacts style end */
 
+
+
+
+  
+  /* Main Digital Library Cards style start */
+
 .wrap_digital_library_cards {
   padding: 40px 20px 41px 20px;
   display: flex;
@@ -901,3 +908,152 @@ margin-left: 20px;
   border: none;
   cursor: pointer;
 }
+
+/* Main Digital Library Cards style end */
+
+
+
+
+/* Footer style start */
+
+.footer_adr {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.footer_adr_map {
+width: 229px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+}
+
+.adr_map {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+
+}
+
+.footer_operating_mode_mon-fri {
+color: #FFF;
+text-align: right;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+}
+
+.footer_social_network {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.footer_social_network_item {
+display: flex;
+width: 102px;
+height: 24px;
+justify-content: center;
+align-items: flex-start;
+gap: 15px;
+margin-top: 8px;
+}
+
+.footer_operating_mode_sat-sun {
+color: #FFF;
+text-align: right;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+}
+
+.line_footer_wrap
+{background-color: #000;}
+
+.line_footer {
+margin-left: 20px;
+height: 1px;
+width: 1400px;
+background-color: #FFF;
+}
+
+.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+
+.year {
+  color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 2px;
+}
+
+.name_school {
+padding-left: 494px;
+  display: flex;
+height: 22px;
+flex-direction: column;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 2px;
+}
+
+
+
+
+
+.my_github {
+  padding-left: 393px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+height: 22px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+
+}
+
+
