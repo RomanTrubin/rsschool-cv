@@ -445,6 +445,24 @@ border: 1px solid #BB945F;
   cursor: default;
 }
 
+#Own1 {
+  color: #BB945F;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+border: 1px solid #BB945F;
+}
+
+#Own1:hover {
+  background-color: #FFF;
+  border: 1px solid #BB945F;
+  cursor: default;
+}
+
 .book_picture {
   position: absolute;
     bottom: -1px;
@@ -965,9 +983,11 @@ line-height: 20px; /* 133.333% */
   background-color: #000;
 }
 
-.footer_social_network_item {
-display: flex;
-width: 102px;
+
+.footer_social_network_ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 102px;
 height: 24px;
 justify-content: center;
 align-items: flex-start;
@@ -1016,7 +1036,7 @@ line-height: 20px; /* 100% */
 letter-spacing: 2px;
 }
 
-.name_school {
+.school {
 padding-left: 494px;
   display: flex;
 height: 22px;
@@ -1030,6 +1050,12 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 100% */
 letter-spacing: 2px;
+}
+
+.name_school {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
 }
 
 
